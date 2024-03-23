@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* CSS for nav */
+.navBar {
+  background-color: #ff7171;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: black;
+  /* margin-top: 10px; */
+  font-family: "Gill Sans";
+  font-weight: 24px;
+  margin: 5px;
+}
+
+#menu {
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+/* CSS for card container */
+.card {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%; /* Set your desired max-width */
+  margin: 0;
+  height: 600px;
+  background-image: linear-gradient(to right, yellow, pink, rgb(238, 126, 144));
+}
+
+/* CSS for text and button container */
+.content {
+  flex: 1;
+  align-items: center;
+  padding: 50px;
+  margin-top: 150px;
+}
+
+/* CSS for image container */
+.image {
+  flex: 1;
+  background-image: url("./images/pexels-robin-stickel-70497.jpg"); /* Set your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+/* CSS for text and button */
+.text {
+  margin-bottom: 10px;
+}
+
+/* CSS for the button */
+.button {
+  padding: 20px 50px;
+  background-color: rgb(241, 131, 150);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+/* CSS for Card-2 */
+.card-2 {
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, yellow, pink, rgb(238, 126, 144));
+}
+.column {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.column img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.column .image-3 {
+  width: 300px;
+  height: 410px;
+  margin-right: 150px;
+}
+
+.text-card {
+  background-color: rgb(231, 108, 129);
+  height: 200px;
+  width: 500px;
+  margin-top: 150px;
+  margin-right: 150px;
+}
+
+.text-card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.text-card-footer img {
+  height: 30px;
+  width: 30px;
+  margin-top: 6px;
+  margin-right: 100px;
+}
+
+/* CSS for Responsive Layout for card-2*/
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    padding: 10px;
+  }
+}
